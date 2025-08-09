@@ -4,6 +4,10 @@ import tkinter as tk
 import os
 from datetime import datetime
 
+# INSTRUCTIONS:
+# Use W and S keys (or Up/Down arrow keys) to move your paddle
+# Press F1 to start/stop recording gameplay footage
+# Press ESC to quit the game
 
 WIDTH, HEIGHT = 200, 200
 PADDLE_WIDTH, PADDLE_HEIGHT = 6, 36
