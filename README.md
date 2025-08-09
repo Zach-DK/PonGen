@@ -8,6 +8,8 @@ A real-time neural network that learns to predict the next frame of Pong gamepla
 
 This project attempts to implements a lightweight U-Net model that learns Pong physics by predicting the next frame given the previous two frames. The model captures ball movement, paddle physics, collisions, and game dynamics entirely from visual data.
 
+I have not been able to make the generation model work well enough to continue, but the ultimate hope was to encode player controls in a row of pixels at the bottom of the window, providing the model a visual representation of controls to learn on. Then, while playing the game in real-time, the deterministic encoding corresponding to the user's real inputs would be overlayed on the bottom row of the screen before being fed into the generator every frame, hopefully causing the player paddle to react as expected.
+
 ## Quick Start
 
 ### 1. Setup Environment
