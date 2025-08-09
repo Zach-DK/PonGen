@@ -2,17 +2,11 @@
 
 A real-time neural network that learns to predict the next frame of Pong gameplay, creating a generative physics simulation trained on actual game data.
 
+![Example Generation](https://github.com/user-attachments/assets/005f9443-fb35-43e5-9ded-4f0b08a1d0a2)
+
 ## Overview
 
-This project implements a lightweight U-Net model that learns Pong physics by predicting the next frame given the previous two frames. The model captures ball movement, paddle physics, collisions, and game dynamics entirely from visual data.
-
-### Key Features
-
-- **Real-time Performance**: ~2ms inference time on GPU (396+ FPS capability)
-- **Lightweight Architecture**: Only 1.98M parameters (~7.5MB model size)
-- **Control Integration**: Reads player input from bottom row pixels
-- **Generative Gameplay**: Can run autonomously by feeding outputs back as inputs
-- **Training Data Recording**: Built-in frame capture during gameplay
+This project attempts to implements a lightweight U-Net model that learns Pong physics by predicting the next frame given the previous two frames. The model captures ball movement, paddle physics, collisions, and game dynamics entirely from visual data.
 
 ## Quick Start
 
@@ -24,8 +18,8 @@ python -m venv venv
 venv\Scripts\activate  # Windows
 # source venv/bin/activate  # Linux/Mac
 
-# Install dependencies (CUDA edition recommended for GPU acceleration)
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# Install dependencies (CUDA edition recommended for GPU acceleration, check version)
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 pip install numpy pillow matplotlib imageio[ffmpeg] pygame
 ```
 
